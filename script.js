@@ -12,8 +12,8 @@ btn1.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText("Вы выбрали товар 1!");
-        item = "1";
+        tg.MainButton.setText(`Вы выбрали товар ${item}!`);
+        item = "Кофе";
         tg.MainButton.show();
     }
 })
