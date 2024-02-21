@@ -14,9 +14,9 @@ let btn4 = document.getElementById("btn4")
 btn1.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
-    } else {
-        tg.MainButton.setText(`Вы выбрали товар ${item}!`);
+    } else { 
         item = "Кофе";
+        tg.MainButton.setText(`Вы выбрали товар ${item}!`);
         tg.MainButton.show();
     }
 })
@@ -25,8 +25,8 @@ btn2.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`Вы выбрали товар ${item}!`);
         item = "Вискас мурчикам";
+        tg.MainButton.setText(`Вы выбрали товар ${item}!`);
         tg.MainButton.show();
     }
 })
@@ -35,8 +35,8 @@ btn3.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`Найти ближайщий ${item}!`);
         item = "Отель";
+        tg.MainButton.setText(`Найти ближайщий ${item}!`);
         tg.MainButton.show();
     }
 })
@@ -45,8 +45,8 @@ btn4.addEventListener("click", function(){
     if(tg.MainButton.isVisible){
         tg.MainButton.hide();
     } else {
-        tg.MainButton.setText(`Вы решили стать самым модным ${item}!`);
         item = "";
+        tg.MainButton.setText(`Вы решили стать самым модным ${item}!`);
         tg.MainButton.show();
     }
 })
