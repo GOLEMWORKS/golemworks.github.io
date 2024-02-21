@@ -20,13 +20,15 @@ btn1.addEventListener("click", function(){
 
 // Связь сайта и тг
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-    tg.SendData(item);
+	tg.sendData(item);
 });
 
 
 // связь тг и сайта
 let usercard = document.getElementById("usercard");
+
 let p = document.createElement("p");
+
 p.innerText = `${tg.initDataUnsafe.user.first_name}
 ${tg.initDataUnsafe.user.last_name}`;
 
